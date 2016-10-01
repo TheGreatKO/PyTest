@@ -1,14 +1,15 @@
-#!/usr/bin/env python3.5
+#!/usr/bin/env python3.4
 
 # Author - KO . All rights reserved.
+import  sys
 from PyQt5 import QtWidgets
 
-# Firsst Test
+# Stab at showing GUI QT Window
+def window():
+    app = QtWidgets.QApplication(sys.argv)
+    w = QtWidgets.QWidget()
+    w.setWindowTitle("GitHub Window")
+    w.show()
+    sys.exit(app.exec_())
 
-print("Hello Github!")
-
-# New Line Added
-# New Line Change
-
-
-#TODO Get thi uploaded to GitHub!
+window()
